@@ -10,7 +10,7 @@
 
 	<prerequisites>
 		<!-- xtend compiler only work under maven3: https://bugs.eclipse.org/bugs/show_bug.cgi?id=410433 -->
-		<maven>3.0.0</maven> 
+		<maven>3.0.0</maven>
 	</prerequisites>
 
 	<properties>
@@ -55,6 +55,9 @@
 						</goals>
 					</execution>
 				</executions>
+				<configuration>
+					<outputDirectory>${basedir}/src/main/xtend-gen</outputDirectory>
+				</configuration>
 			</plugin>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>

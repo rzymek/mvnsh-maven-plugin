@@ -16,7 +16,7 @@ import org.apache.maven.plugins.annotations.ResolutionScope
 import org.apache.maven.profiles.DefaultProfileManager
 
 @Mojo(name='run', requiresDependencyResolution=ResolutionScope::COMPILE_PLUS_RUNTIME)
-class mvnsh extends AbstractMojo {
+class MvnSH extends AbstractMojo {
 	@Parameter(defaultValue='${session}', required=true, readonly=true)
 	MavenSession session
 	@Parameter(defaultValue='${basedir}', required=true, readonly=true)
